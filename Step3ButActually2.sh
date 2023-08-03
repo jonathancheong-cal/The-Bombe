@@ -10,9 +10,16 @@ while currnwt.lenght <= input.length
 
 var finalCut = current.substring(0, input.length)
 
-forecach (var letter in input)
+var result = new List<char>();
+for(var i=0; i++; i< input.lenght)
 {
-    var indexCurrentInInputFound = fullOptions.Find(letter.ToString()).IndexOf();
-    var newLetter = finalCut[indexCurrentInInputFound];
-
+    forecach (var letterFromDay in finalCut)
+    {
+        var indexCurrentInInputFound = fullOptions.Find(letterFromDay.ToString()).IndexOf();
+        var indexOfOldLetter = fullOptions.Find(input[i] - indexCurrentInInputFound).IndexOf();
+        var newLetter = fullOptions[indexOfOldLetter];
+        result.Add(newLetter);
+    }
 }
+
+return result;
