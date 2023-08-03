@@ -1,0 +1,11 @@
+MONDAY: OOYDSQ AR
+C(M)A(O)L(N)A(D)S(A)T(Y)O(M)N(O)E(N)
+-> OOY
+
+ord L = 76 (76-65 = 11 from A)
+ord N = 78 (78-65 = 13 from A)
+shift L by N-A = 13
+so L becomes 11+13 = 24 from A: 65 + 24 = 89 = Y
+max = 90 (Z) 
+if 91 = " " (space)
+if > 91 then -27 until between 65 and 91 (example 92-27 = 65 = A)
